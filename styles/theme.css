@@ -1,0 +1,98 @@
+/**
+ * Tailwind CSS 4 @theme — maps design tokens to utility classes.
+ */
+
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-bg: var(--cn-color-bg);
+  --color-brand-text: var(--cn-color-text);
+  --color-brand-accent: var(--cn-color-accent);
+  --color-brand-accent-secondary: var(--cn-color-accent-secondary);
+  --color-brand-accent-dark: var(--cn-color-accent-dark);
+  --color-brand-surface: var(--cn-color-surface);
+  --color-brand-surface-elevated: var(--cn-color-surface-elevated);
+  --color-brand-border: var(--cn-color-border);
+  --color-brand-border-light: var(--cn-color-border-light);
+  --color-brand-muted: var(--cn-color-muted);
+  --color-brand-muted-secondary: var(--cn-color-muted-secondary);
+
+  /* Typography — font families */
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Default sans maps to body; display/mono via utilities */
+  --font-sans: var(--font-body);
+
+  /* Spacing scale (Tailwind spacing utilities) */
+  --spacing-cn-1: var(--cn-space-1);
+  --spacing-cn-2: var(--cn-space-2);
+  --spacing-cn-3: var(--cn-space-3);
+  --spacing-cn-4: var(--cn-space-4);
+  --spacing-cn-6: var(--cn-space-6);
+  --spacing-cn-8: var(--cn-space-8);
+  --spacing-cn-10: var(--cn-space-10);
+  --spacing-cn-12: var(--cn-space-12);
+  --spacing-cn-16: var(--cn-space-16);
+  --spacing-cn-20: var(--cn-space-20);
+  --spacing-cn-24: var(--cn-space-24);
+  --spacing-cn-30: var(--cn-space-30);
+  --spacing-cn-40: var(--cn-space-40);
+
+  /* Radius */
+  --radius-cn-sm: var(--cn-radius-sm);
+  --radius-cn-md: var(--cn-radius-md);
+  --radius-cn-lg: var(--cn-radius-lg);
+  --radius-cn-xl: var(--cn-radius-xl);
+
+  /* Shadows */
+  --shadow-cn-sm: var(--cn-shadow-sm);
+  --shadow-cn-md: var(--cn-shadow-md);
+  --shadow-cn-lg: var(--cn-shadow-lg);
+  --shadow-cn-glow: var(--cn-shadow-glow-accent);
+  --shadow-cn-glow-strong: var(--cn-shadow-glow-accent-strong);
+
+  /* Layout */
+  --container-cn: var(--cn-container-max);
+  --padding-inline-container: var(--cn-container-padding);
+
+  /* Breakpoints — design-system reference widths */
+  --breakpoint-cn-xs: 20rem; /* 320 */
+  --breakpoint-cn-sm: 23.4375rem; /* 375 */
+  --breakpoint-cn-md: 24.375rem; /* 390 */
+  --breakpoint-cn-lg: 26.875rem; /* 430 */
+  --breakpoint-cn-xl: 48rem; /* 768 */
+  --breakpoint-cn-2xl: 64rem; /* 1024 */
+  --breakpoint-cn-3xl: 80rem; /* 1280 */
+  --breakpoint-cn-4xl: 90rem; /* 1440 */
+  --breakpoint-cn-5xl: 120rem; /* 1920 */
+
+  /* Fluid type scale (rem) — refined per breakpoint via clamp in utilities */
+  --text-display-2xl: clamp(3rem, 6vw + 1rem, 5.5rem);
+  --text-display-xl: clamp(2.75rem, 5vw + 1rem, 4.75rem);
+  --text-display-lg: clamp(2.25rem, 3.5vw + 1rem, 3.75rem);
+  --text-display-md: clamp(1.875rem, 2.5vw + 0.75rem, 2.75rem);
+  --text-heading-xl: clamp(1.75rem, 2vw + 0.75rem, 2.25rem);
+  --text-heading-lg: clamp(1.5rem, 1.5vw + 0.75rem, 1.875rem);
+  --text-heading-md: clamp(1.25rem, 1vw + 0.65rem, 1.5rem);
+  --text-heading-sm: clamp(1.0625rem, 0.5vw + 0.85rem, 1.25rem);
+  --text-body-lg: clamp(1.0625rem, 0.25vw + 0.95rem, 1.125rem);
+  --text-body-md: 1rem;
+  --text-body-sm: 0.875rem;
+  --text-caption: 0.75rem;
+  --text-label: 0.6875rem;
+
+  --animate-marquee: marquee 36s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

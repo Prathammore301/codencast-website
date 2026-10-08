@@ -1,0 +1,129 @@
+/**
+ * CodeNCast design tokens — single source of truth for raw values.
+ * Consume via @theme (Tailwind) or var(--token) in CSS. Do not hardcode hex in components.
+ */
+
+:root {
+  /* Color — core palette */
+  --cn-color-bg: #0b0f17;
+  --cn-color-text: #f8fafc;
+  --cn-color-accent: #00f0ff;
+  --cn-color-accent-secondary: #00c8d7;
+  --cn-color-accent-dark: #008c99;
+  --cn-color-surface: #111827;
+  --cn-color-surface-elevated: #151d2b;
+  --cn-color-border: #1e293b;
+  --cn-color-border-light: #334155;
+  --cn-color-muted: #94a3b8;
+  --cn-color-muted-secondary: #64748b;
+
+  /* Semantic aliases */
+  --background: var(--cn-color-bg);
+  --foreground: var(--cn-color-text);
+
+  /* Container */
+  --cn-container-max: 90rem; /* 1440px */
+  --cn-container-padding: 1.25rem; /* 20px — mobile base */
+
+  /* Spacing scale (8pt rhythm) */
+  --cn-space-1: 0.25rem; /* 4 */
+  --cn-space-2: 0.5rem; /* 8 */
+  --cn-space-3: 0.75rem; /* 12 */
+  --cn-space-4: 1rem; /* 16 */
+  --cn-space-6: 1.5rem; /* 24 */
+  --cn-space-8: 2rem; /* 32 */
+  --cn-space-10: 2.5rem; /* 40 */
+  --cn-space-12: 3rem; /* 48 */
+  --cn-space-16: 4rem; /* 64 */
+  --cn-space-20: 5rem; /* 80 */
+  --cn-space-24: 6rem; /* 96 */
+  --cn-space-30: 7.5rem; /* 120 */
+  --cn-space-40: 10rem; /* 160 */
+
+  /* Section spacing */
+  --cn-section-y-sm: var(--cn-space-16);
+  --cn-section-y-md: var(--cn-space-24);
+  --cn-section-y-lg: var(--cn-space-30);
+  --cn-section-y-xl: var(--cn-space-40);
+  --cn-section-y-home: var(--cn-space-12);
+  --cn-section-y-home-lg: var(--cn-space-20);
+
+  /* Radius */
+  --cn-radius-sm: 0.5rem; /* 8px */
+  --cn-radius-md: 0.75rem; /* 12px */
+  --cn-radius-lg: 1rem; /* 16px */
+  --cn-radius-xl: 1.5rem; /* 24px */
+
+  /* Borders */
+  --cn-border-width: 1px;
+
+  /* Shadows — subtle elevation on dark UI */
+  --cn-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+  --cn-shadow-md: 0 4px 16px rgb(0 0 0 / 0.25);
+  --cn-shadow-lg: 0 12px 40px rgb(0 0 0 / 0.35);
+  --cn-shadow-glow-accent: 0 0 24px rgb(0 240 255 / 0.12);
+  --cn-shadow-glow-accent-strong: 0 0 32px rgb(0 240 255 / 0.22);
+
+  /* Glass surface */
+  --cn-glass-bg: rgb(17 24 39 / 0.55);
+  --cn-glass-border: rgb(255 255 255 / 0.06);
+  --cn-glass-blur: 12px;
+
+  /* Grid & atmosphere */
+  --cn-grid-size: 2.5rem; /* 40px */
+  --cn-grid-line: rgb(255 255 255 / 0.03);
+  --cn-grid-line-teal: rgb(0 240 255 / 0.04);
+  --cn-glow-radial: rgb(0 200 215 / 0.08);
+
+  /* Motion */
+  --cn-ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --cn-duration-fast: 150ms;
+  --cn-duration-normal: 280ms;
+  --cn-duration-slow: 420ms;
+
+  /* Interaction */
+  --cn-focus-ring: 0 0 0 2px var(--cn-color-bg), 0 0 0 4px var(--cn-color-accent);
+  --cn-focus-ring-offset: 2px;
+
+  /* Selection */
+  --cn-selection-bg: rgb(0 240 255 / 0.18);
+  --cn-selection-text: var(--cn-color-text);
+
+  /* Scrollbar */
+  --cn-scrollbar-thumb: rgb(148 163 184 / 0.25);
+  --cn-scrollbar-thumb-hover: rgb(148 163 184 / 0.4);
+}
+
+/* Container padding — responsive horizontal inset */
+@media (min-width: 23.4375rem) {
+  :root {
+    --cn-container-padding: 1.5rem; /* 24px */
+  }
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --cn-container-padding: 2rem; /* 32px */
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --cn-container-padding: 3rem; /* 48px */
+  }
+}
+
+@media (min-width: 90rem) {
+  :root {
+    --cn-container-padding: 4rem; /* 64px */
+  }
+}
+
+@media (min-width: 75rem) {
+  :root {
+    --cn-section-y-sm: var(--cn-space-20);
+    --cn-section-y-md: var(--cn-space-30);
+    --cn-section-y-lg: var(--cn-space-40);
+    --cn-section-y-xl: 12.5rem;
+  }
+}
