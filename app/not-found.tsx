@@ -16,7 +16,7 @@ export default function NotFound() {
   return (
     <PageShell>
       <div className="cn-container cn-bg-grid-teal flex min-h-[55vh] flex-col justify-center border-b border-brand-border/60 py-28 lg:min-h-[60vh] lg:py-32">
-        <p className="cn-tech-label text-brand-accent">404</p>
+        <p className="cn-tech-label text-brand-accent-secondary">404</p>
         <h1 className="cn-display-md mt-4 text-brand-text lg:cn-display-lg">Page not found.</h1>
         <p className="mt-4 max-w-md cn-body-lg text-brand-muted">
           The page you are looking for may have moved or does not exist. Try the homepage or our

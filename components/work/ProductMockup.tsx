@@ -26,7 +26,7 @@ export function ProductMockup({
         <div className="absolute inset-0 cn-bg-grid-dark opacity-40" />
         <div className="relative grid h-full min-h-[inherit] lg:grid-cols-[220px_1fr_280px]">
           <aside className="hidden border-r border-brand-border/80 bg-brand-surface/30 p-5 lg:block xl:p-6">
-            <p className="cn-tech-label text-brand-accent">Northstar</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Northstar</p>
             <nav className="mt-8 space-y-3">
               {["Overview", "Portfolio", "Allocations", "Activity"].map((item, i) => (
                 <p
@@ -122,7 +122,7 @@ export function ProductMockup({
         <MockupConceptLabel />
         <div className="grid min-h-[inherit] lg:grid-cols-12">
           <div className="border-b border-brand-border/80 p-5 lg:col-span-4 lg:border-b-0 lg:border-r lg:p-8">
-            <p className="cn-tech-label text-brand-accent">MedAxis Flow</p>
+            <p className="cn-tech-label text-brand-accent-secondary">MedAxis Flow</p>
             <p className="mt-2 cn-caption text-brand-muted">Operations control</p>
             <div className="mt-8 space-y-3">
               {["Scheduling", "Inventory", "Dispatch", "Compliance"].map((stage, i) => (

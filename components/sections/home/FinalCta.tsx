@@ -10,7 +10,7 @@ export function FinalCta() {
           <div className="relative overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-surface-elevated px-6 py-12 cn-bg-grid-teal lg:px-14 lg:py-16 xl:px-20 xl:py-20">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(0,240,255,0.06),transparent_45%)]" />
             <div className="relative max-w-3xl">
-              <p className="cn-tech-label text-brand-accent">
+              <p className="cn-tech-label text-brand-accent-secondary">
                 {finalCtaContent.eyebrow}
               </p>
               <h2

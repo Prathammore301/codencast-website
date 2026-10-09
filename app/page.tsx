@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/layout/Footer";
-import { Capabilities } from "@/components/sections/home/Capabilities";
 import { EngineeringDesign } from "@/components/sections/home/EngineeringDesign";
 import { FinalCta } from "@/components/sections/home/FinalCta";
 import { HeroSection } from "@/components/sections/home/HeroSection";
 import { IndustriesSection } from "@/components/sections/home/IndustriesSection";
 import { ProcessSection } from "@/components/sections/home/ProcessSection";
-import { CapabilityShowcase } from "@/components/sections/home/CapabilityShowcase";
 import { TechMarquee } from "@/components/sections/home/TechMarquee";
+import { WhatWeBuild } from "@/components/sections/home/WhatWeBuild";
 import { WhyCodeNCast } from "@/components/sections/home/WhyCodeNCast";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { getHomeJsonLd } from "@/lib/seo/json-ld";
@@ -33,8 +32,7 @@ export default function HomePage() {
       <main id="main-content" className="flex-1 bg-brand-bg">
         <HeroSection />
         <TechMarquee />
-        <CapabilityShowcase />
-        <Capabilities />
+        <WhatWeBuild />
         <EngineeringDesign />
         <ProcessSection />
         <IndustriesSection />

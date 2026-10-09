@@ -25,7 +25,7 @@ export function InsightsIndex({ featured, articles, categories }: InsightsIndexP
       <Reveal>
         <article className="relative grid gap-8 overflow-hidden border border-brand-border/80 bg-brand-surface/20 p-6 cn-bg-grid-teal lg:grid-cols-12 lg:gap-10 lg:p-10 xl:p-12">
           <div className="lg:col-span-7">
-            <p className="cn-tech-label text-brand-accent">Featured insight</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Featured insight</p>
             <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 cn-tech-label text-brand-muted-secondary">
               <span>{featured.category}</span>
               <time dateTime={featured.publishedAt}>{formatInsightDate(featured.publishedAt)}</time>

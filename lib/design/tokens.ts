@@ -9,6 +9,7 @@ export const brandColors = {
   accent: "brand-accent",
   accentSecondary: "brand-accent-secondary",
   accentDark: "brand-accent-dark",
+  accentSecondaryDark: "brand-accent-secondary-dark",
   surface: "brand-surface",
   surfaceElevated: "brand-surface-elevated",
   border: "brand-border",

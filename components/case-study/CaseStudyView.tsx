@@ -55,9 +55,9 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
   return (
     <>
       <article>
-        <div className={`relative cn-container cn-section-y-lg pb-0 ${theme.heroGlow}`}>
+        <div className={`relative cn-container cn-page-bottom-lg pb-0 ${theme.heroGlow}`}>
           <Reveal>
-            <header className="grid gap-10 pt-28 lg:grid-cols-12 lg:items-end lg:gap-12 lg:pt-32 xl:gap-16">
+            <header className="cn-page-top-nav grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12 xl:gap-16">
               <div
                 className={
                   theme.heroLayout === "split"
@@ -65,7 +65,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
                     : "lg:col-span-6 xl:col-span-5"
                 }
               >
-                <p className="cn-tech-label text-brand-accent">{theme.conceptBadge}</p>
+                <p className="cn-tech-label text-brand-accent-secondary">{theme.conceptBadge}</p>
                 <p className="mt-4 font-mono text-sm tracking-[0.2em] text-brand-muted-secondary">
                   {project.index}
                 </p>
@@ -193,11 +193,11 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
                 <h2 className="cn-heading-lg text-brand-text">Technology & capabilities</h2>
                 <div className="mt-8 grid gap-10 lg:grid-cols-2">
                   <div>
-                    <p className="cn-tech-label text-brand-accent">Capabilities</p>
+                    <p className="cn-tech-label text-brand-accent-secondary">Capabilities</p>
                     <EditorialList items={project.capabilities} className="mt-4" />
                   </div>
                   <div>
-                    <p className="cn-tech-label text-brand-accent">Technology direction</p>
+                    <p className="cn-tech-label text-brand-accent-secondary">Technology direction</p>
                     <EditorialList items={project.technologies} className="mt-4" />
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export function CaseStudyView({ project }: CaseStudyViewProps) {
 
         <section className="border-t border-brand-border/80">
           <div className="cn-container cn-section-y-md">
-            <p className="cn-tech-label text-brand-accent">Related work</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Related work</p>
             <ul className="mt-6 divide-y divide-brand-border/80">
               {related.map((item) => (
                 <li key={item.slug}>

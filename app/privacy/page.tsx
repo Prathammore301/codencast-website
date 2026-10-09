@@ -13,8 +13,8 @@ export const metadata: Metadata = createPageMetadata({
 export default function PrivacyPage() {
   return (
     <PageShell>
-      <div className="cn-container cn-section-y-lg">
-        <header className="mx-auto max-w-3xl pt-28 lg:max-w-4xl lg:pt-32">
+      <div className="cn-container cn-page-bottom-lg">
+        <header className="cn-page-top-nav mx-auto max-w-3xl lg:max-w-4xl">
           <p className="cn-tech-label text-brand-muted">
             Last updated {privacyPageContent.lastUpdated}
           </p>

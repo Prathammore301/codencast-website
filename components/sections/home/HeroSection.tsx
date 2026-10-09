@@ -23,14 +23,10 @@ export function HeroSection() {
       className="relative cn-bg-radial-glow border-b border-brand-border/60 pb-12 pt-6 max-lg:pb-16 lg:pb-16 lg:pt-12 xl:pt-14"
     >
       <div className="cn-container relative flex flex-col">
-        <motion.p className="cn-tech-label tracking-[0.18em] text-brand-accent" {...fade(0)}>
-          {heroContent.eyebrow}
-        </motion.p>
-
         <motion.h1
           id="hero-heading"
-          className="cn-display-lg mt-6 max-w-[14ch] text-brand-text sm:max-w-none sm:cn-display-xl lg:cn-display-2xl lg:max-w-[18ch] xl:max-w-[20ch]"
-          {...fade(0.06)}
+          className="cn-display-lg max-w-[14ch] text-brand-text sm:max-w-none sm:cn-display-xl lg:cn-display-2xl lg:max-w-[18ch] xl:max-w-[20ch]"
+          {...fade(0)}
         >
           <span className="block">{heroContent.headlineLines[0]}</span>
           <span className="mt-1 block text-brand-muted/95">{heroContent.headlineLines[1]}</span>

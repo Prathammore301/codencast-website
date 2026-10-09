@@ -1,5 +1,4 @@
 export const heroContent = {
-  eyebrow: "DIGITAL ENGINEERING STUDIO",
   headline: "We build digital products that move businesses forward.",
   headlineLines: [
     "We build digital products",
@@ -9,64 +8,70 @@ export const heroContent = {
   supporting:
     "Software, design and digital growth systems built around the way your business actually works.",
   primaryCta: { label: "Start a project", href: "/contact" },
-  secondaryCta: { label: "Explore our capabilities", href: "/services" },
+  secondaryCta: { label: "What we build", href: "#what-we-build" },
   metaLabels: ["Build", "Design", "Engineer", "Grow"],
 };
 
-export const capabilityShowcaseContent = {
-  eyebrow: "What we build",
-  title: "Digital systems built around real business needs.",
+export const whatWeBuildContent = {
+  title: "What We Build",
   description:
-    "From software platforms and websites to commerce experiences and growth systems, we bring design and engineering together to build what your business actually needs.",
+    "From customer-facing websites to internal business systems, we build digital products around your business needs.",
   items: [
     {
       id: "software",
-      index: "01",
-      category: "SOFTWARE",
-      keywords: ["Business systems", "APIs", "Internal tools", "Workflow automation"],
-      visual: "software" as const,
+      icon: "software" as const,
+      title: "Software Development",
+      description:
+        "Custom business software, internal tools, APIs, and scalable applications.",
+      href: "/services/software-development",
     },
     {
       id: "web",
-      index: "02",
-      category: "WEB",
-      keywords: ["Websites", "Web applications", "CMS platforms", "Performance"],
-      visual: "web" as const,
+      icon: "web" as const,
+      title: "Web Development",
+      description:
+        "Business websites, web applications, dashboards, and customer portals.",
+      href: "/services/web-development",
     },
     {
       id: "mobile",
-      index: "03",
-      category: "MOBILE",
-      keywords: ["Mobile products", "User workflows", "API integration"],
-      visual: "mobile" as const,
+      icon: "mobile" as const,
+      title: "Mobile App Development",
+      description:
+        "Mobile experiences for customer services, business workflows, and on-the-go access.",
+      href: "/services/mobile-app-development",
     },
     {
       id: "commerce",
-      index: "04",
-      category: "COMMERCE",
-      keywords: ["Shopify", "E-commerce platforms", "Product discovery", "Conversion UX"],
-      visual: "commerce" as const,
+      icon: "commerce" as const,
+      title: "E-commerce Solutions",
+      description:
+        "Online stores, product catalogues, payment integrations, and shopping experiences.",
+      href: "/services/ecommerce",
     },
     {
       id: "design",
-      index: "05",
-      category: "DESIGN",
-      keywords: ["UI/UX", "Design systems", "Prototyping", "Product experience"],
-      visual: "design" as const,
+      icon: "design" as const,
+      title: "UI/UX & Product Design",
+      description:
+        "User flows, wireframes, interfaces, prototypes, and design systems.",
+      href: "/services/ui-ux-design",
     },
     {
       id: "growth",
-      index: "06",
-      category: "GROWTH",
-      keywords: ["Technical SEO", "Content architecture", "Local SEO", "Organic growth"],
-      visual: "growth" as const,
+      icon: "growth" as const,
+      title: "SEO & Digital Growth",
+      description:
+        "Technical SEO, on-page optimization, website performance, and organic search foundations.",
+      href: "/services/seo-digital-growth",
     },
     {
-      id: "automation",
-      index: "07",
-      category: "AUTOMATION",
-      keywords: ["QA automation", "Business workflows", "System integrations"],
-      visual: "automation" as const,
+      id: "qa",
+      icon: "qa" as const,
+      title: "QA Automation",
+      description:
+        "Automated testing, regression checks, test workflows, and quality-focused release support.",
+      href: "/services/software-development",
     },
   ],
 };
@@ -85,70 +90,6 @@ export const techStackItems = [
   "REST APIs",
   "MySQL",
 ];
-
-export const capabilitiesContent = {
-  heading: "What we build",
-  supporting:
-    "From product engineering to digital growth, CodeNCast brings strategy, design and implementation into one workflow.",
-  items: [
-    {
-      index: "01",
-      title: "Software Development",
-      href: "/services/software-development",
-      summary: "Custom business systems, APIs, platforms and internal tools.",
-      detail:
-        "Structured backends, integrations and product foundations built for maintainability.",
-    },
-    {
-      index: "02",
-      title: "Web Development",
-      href: "/services/web-development",
-      summary: "High-performance websites and web applications built for clarity, speed and maintainability.",
-      detail:
-        "Modern stacks, accessible UI and deployment-ready architecture from day one.",
-    },
-    {
-      index: "03",
-      title: "Mobile App Development",
-      href: "/services/mobile-app-development",
-      summary: "Mobile product experiences designed around real user workflows.",
-      detail:
-        "Native-feeling flows, performance-conscious builds and product logic that scales.",
-    },
-    {
-      index: "04",
-      title: "E-commerce",
-      href: "/services/ecommerce",
-      summary: "Commerce experiences built around usability, discovery and conversion.",
-      detail:
-        "Catalog structure, checkout clarity and storefront systems aligned with how people buy.",
-    },
-    {
-      index: "05",
-      title: "UI/UX Design",
-      href: "/services/ui-ux-design",
-      summary: "Research-informed interfaces, design systems and product experiences.",
-      detail:
-        "Wireframes to polished UI with systems that translate cleanly into development.",
-    },
-    {
-      index: "06",
-      title: "SEO & Digital Growth",
-      href: "/services/seo-digital-growth",
-      summary: "Technical SEO, content foundations and organic growth systems.",
-      detail:
-        "Indexability, structured content and measurable foundations for long-term visibility.",
-    },
-    {
-      index: "07",
-      title: "Graphic Design",
-      href: "/services/graphic-design",
-      summary: "Digital brand systems, campaign assets and visual communication.",
-      detail:
-        "Coherent visual language across product, marketing and campaign touchpoints.",
-    },
-  ],
-};
 
 export const engineeringDesignContent = {
   headline:

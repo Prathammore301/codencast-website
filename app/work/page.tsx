@@ -42,7 +42,7 @@ export default function WorkPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="cn-container cn-section-y-lg pb-0">
+      <div className="cn-container cn-page-bottom-lg pb-0">
         <PageHero
           eyebrow={workPageContent.eyebrow.toUpperCase()}
           title={workPageContent.title}

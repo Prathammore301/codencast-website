@@ -1,14 +1,17 @@
 import type { MetadataRoute } from "next";
-import { getAllSitePaths } from "@/lib/seo/routes";
+import { getSitemapEntries } from "@/lib/seo/routes";
 import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
-  return getAllSitePaths().map((path) => ({
-    url: new URL(path, siteConfig.url).toString(),
-    lastModified,
-    changeFrequency: path === "/" ? "weekly" : "monthly",
-    priority: path === "/" ? 1 : path.startsWith("/insights") ? 0.6 : 0.8,
-  }));
+  return getSitemapEntries().map(({ path, lastModified }) => {
+    const entry: MetadataRoute.Sitemap[number] = {
+      url: new URL(path, siteConfig.url).toString(),
+      changeFrequency: path === "/" ? "weekly" : "monthly",
+      priority: path === "/" ? 1 : path.startsWith("/insights") ? 0.6 : 0.8,
+    };
+    if (lastModified) {
+      entry.lastModified = lastModified;
+    }
+    return entry;
+  });
 }

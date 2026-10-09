@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site";
 
-const defaultOgImagePath = "/brand/codencast-logo.png";
+const defaultOgImagePath = "/brand/codencast-logo-full.png";
 
 export function createPageMetadata(options?: {
   title?: string;

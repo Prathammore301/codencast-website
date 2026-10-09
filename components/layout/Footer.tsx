@@ -8,7 +8,7 @@ export function Footer() {
       <div className="cn-container py-12 lg:py-16">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-12 xl:gap-16">
           <div className="lg:col-span-4 xl:col-span-5">
-            <NavLogo />
+            <NavLogo variant="footer" />
             <p className="mt-6 max-w-md cn-body-lg text-brand-muted">
               Digital products, software and growth systems for businesses ready
               to build better.
@@ -22,7 +22,7 @@ export function Footer() {
 
           <div className="grid gap-10 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-2 lg:gap-10">
             <div>
-              <p className="cn-tech-label text-brand-accent">Navigation</p>
+              <p className="cn-tech-label text-brand-accent-secondary">Navigation</p>
               <ul className="mt-5 space-y-3.5">
                 {mainNavLinks.map((link) => (
                   <li key={link.label}>
@@ -46,7 +46,7 @@ export function Footer() {
             </div>
 
             <div>
-              <p className="cn-tech-label text-brand-accent">Services</p>
+              <p className="cn-tech-label text-brand-accent-secondary">Services</p>
               <ul className="mt-5 space-y-3.5">
                 {serviceMenuItems.map((service) => (
                   <li key={service.href}>
@@ -67,7 +67,7 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="cn-tech-label text-brand-accent">Connect</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Connect</p>
             <p className="mt-5 cn-body-md text-brand-muted">
               Social profiles will be linked here when published. For now, use the{" "}
               <Link href={contactHref} className="text-brand-text cn-interactive hover:text-brand-accent">

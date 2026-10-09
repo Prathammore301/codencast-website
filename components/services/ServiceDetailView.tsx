@@ -42,7 +42,7 @@ export function ServiceDetailView({ service }: ServiceDetailViewProps) {
 
   return (
     <>
-      <div className="cn-container cn-section-y-lg pb-0">
+      <div className="cn-container cn-page-bottom-lg pb-0">
         <PageHero
           eyebrow={`${service.categoryLabel} · Service`}
           title={service.title}
@@ -98,7 +98,7 @@ export function ServiceDetailView({ service }: ServiceDetailViewProps) {
             <Reveal delay={0.05}>
               <div className="sticky top-28 space-y-6 border border-brand-border/80 bg-brand-surface/25 p-6 lg:p-8">
                 <div>
-                  <p className="cn-tech-label text-brand-accent">What happens next</p>
+                  <p className="cn-tech-label text-brand-accent-secondary">What happens next</p>
                   <EditorialList items={service.engagement} className="mt-4" />
                 </div>
                 <Link
@@ -121,7 +121,7 @@ export function ServiceDetailView({ service }: ServiceDetailViewProps) {
 
       <section className="border-t border-brand-border/80 bg-brand-surface/[0.08]">
         <div className="cn-container cn-section-y-md">
-          <p className="cn-tech-label text-brand-accent">Related services</p>
+          <p className="cn-tech-label text-brand-accent-secondary">Related services</p>
           <h2 className="cn-heading-md mt-3 text-brand-text">Works well alongside</h2>
           <ul className="mt-8 divide-y divide-brand-border/80 border-y border-brand-border/80">
             {related.map((item) => (

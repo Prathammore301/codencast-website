@@ -25,7 +25,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="cn-container cn-section-y-lg pb-20 lg:pb-24">
+      <div className="cn-container cn-page-top-nav cn-page-bottom-lg pb-20 lg:pb-24">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 xl:gap-20">
           <div className="lg:col-span-5">
             <PageHero
@@ -37,11 +37,11 @@ export default function ContactPage() {
             />
             <div className="mt-10 space-y-6 border-t border-brand-border/80 pt-8">
               <div>
-                <p className="cn-tech-label text-brand-accent">Email</p>
+                <p className="cn-tech-label text-brand-accent-secondary">Email</p>
                 <p className="mt-2 cn-body-md text-brand-muted">{contactPageContent.emailNote}</p>
               </div>
               <div>
-                <p className="cn-tech-label text-brand-accent">Location</p>
+                <p className="cn-tech-label text-brand-accent-secondary">Location</p>
                 <p className="mt-2 cn-body-md text-brand-muted">{contactPageContent.locationNote}</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function ContactPage() {
             <div className="rounded-[1rem] border border-brand-border/80 bg-brand-surface/25 p-6 cn-bg-grid-dark lg:p-8 xl:p-10">
               <p className="cn-tech-label text-brand-muted">Project enquiry</p>
               <p className="mt-2 cn-body-sm text-brand-muted-secondary">
-                Fields marked with * are required. Submission is frontend-only until API integration.
+                Fields marked with * are required. Submit the form to send your enquiry to our team.
               </p>
               <div className="mt-8">
                 <ContactForm />

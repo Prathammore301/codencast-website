@@ -30,16 +30,20 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="cn-container cn-section-y-lg pb-0">
+      <div className="cn-container cn-page-bottom-lg pb-0">
         <PageHero
           eyebrow={c.eyebrow}
           title={c.title}
           description={c.description}
           size="large"
           meta={[
-            { label: "Studio", value: "Engineering · Design · Growth" },
-            { label: "Focus", value: "Useful digital systems for business" },
-            { label: "Focus", value: "Capabilities-led delivery for business teams" },
+            { id: "studio", label: "Studio", value: "Engineering · Design · Growth" },
+            { id: "focus-systems", label: "Focus", value: "Useful digital systems for business" },
+            {
+              id: "focus-delivery",
+              label: "Delivery",
+              value: "Capabilities-led delivery for business teams",
+            },
           ]}
         />
 
@@ -113,7 +117,7 @@ export default function AboutPage() {
           <aside className="lg:col-span-4">
             <Reveal delay={0.05}>
               <div className="sticky top-28 border border-brand-border/80 bg-brand-surface/20 p-6 lg:p-8">
-                <p className="cn-tech-label text-brand-accent">{c.principles.title}</p>
+                <p className="cn-tech-label text-brand-accent-secondary">{c.principles.title}</p>
                 <ul className="mt-6 space-y-6">
                   {c.principles.items.map((item) => (
                     <li key={item.title}>

@@ -32,7 +32,7 @@ export function IndustriesSection() {
                 </p>
                 <span
                   aria-hidden
-                  className="cn-tech-label text-brand-accent opacity-0 transition-opacity group-hover:opacity-100"
+                  className="cn-tech-label text-brand-accent-secondary opacity-0 transition-opacity group-hover:opacity-100"
                 >
                   —
                 </span>

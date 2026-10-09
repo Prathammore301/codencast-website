@@ -11,7 +11,7 @@ function ProjectDivider({ index }: { index: string }) {
     >
       <span className="cn-tech-label text-brand-muted-secondary">{index}</span>
       <span className="h-px flex-1 bg-brand-border/80" />
-      <span className="cn-tech-label text-brand-accent/70">Concept</span>
+      <span className="cn-tech-label text-brand-accent-secondary/70">Concept</span>
     </div>
   );
 }

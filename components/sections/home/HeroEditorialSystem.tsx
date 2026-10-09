@@ -25,7 +25,7 @@ export function HeroEditorialSystem() {
 
       <div className="relative cn-container">
         <div className="flex items-center gap-4">
-          <p className="cn-tech-label text-brand-accent">Digital system</p>
+          <p className="cn-tech-label text-brand-accent-secondary">Digital system</p>
           <span className="h-px flex-1 max-w-xs bg-brand-border/80" aria-hidden />
         </div>
 
@@ -68,7 +68,7 @@ export function HeroEditorialSystem() {
               cx={x}
               cy={i === 2 ? 20 : i === 6 ? 60 : 40}
               r="3"
-              fill="#0b0f17"
+              fill="#080a0f"
               stroke="rgba(0,240,255,0.45)"
               strokeWidth="1"
             />

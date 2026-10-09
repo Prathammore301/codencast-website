@@ -11,7 +11,7 @@ export function EngineeringDesign() {
       <div className="cn-container">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12 xl:gap-16">
           <Reveal className="lg:col-span-5 xl:col-span-4">
-            <p className="cn-tech-label text-brand-accent">Engineering + design</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Engineering + design</p>
             <h2
               id="engineering-design-heading"
               className="cn-display-md mt-6 text-brand-text lg:cn-display-lg"

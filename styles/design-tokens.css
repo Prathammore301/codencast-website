@@ -4,18 +4,19 @@
  */
 
 :root {
-  /* Color — core palette */
-  --cn-color-bg: #0b0f17;
-  --cn-color-text: #f8fafc;
-  --cn-color-accent: #00f0ff;
-  --cn-color-accent-secondary: #00c8d7;
-  --cn-color-accent-dark: #008c99;
-  --cn-color-surface: #111827;
-  --cn-color-surface-elevated: #151d2b;
-  --cn-color-border: #1e293b;
-  --cn-color-border-light: #334155;
-  --cn-color-muted: #94a3b8;
-  --cn-color-muted-secondary: #64748b;
+  /* Color — core palette (2026 brand: orange primary, cyan secondary) */
+  --cn-color-bg: #080a0f;
+  --cn-color-text: #f5f7fa;
+  --cn-color-accent: #ff9d2e;
+  --cn-color-accent-secondary: #20d8f2;
+  --cn-color-accent-dark: #e07f12;
+  --cn-color-accent-secondary-dark: #17afc5;
+  --cn-color-surface: #10141d;
+  --cn-color-surface-elevated: #171d28;
+  --cn-color-border: #293140;
+  --cn-color-border-light: #354052;
+  --cn-color-muted: #a8b1c2;
+  --cn-color-muted-secondary: #7a8496;
 
   /* Semantic aliases */
   --background: var(--cn-color-bg);
@@ -48,6 +49,12 @@
   --cn-section-y-home: var(--cn-space-12);
   --cn-section-y-home-lg: var(--cn-space-20);
 
+  /* Fixed navbar clearance for inner pages */
+  --cn-nav-height: 3.5rem;
+  --cn-nav-height-lg: 5rem;
+  --cn-page-hero-pad-top: calc(var(--cn-nav-height) + 1.25rem);
+  --cn-page-hero-pad-top-lg: calc(var(--cn-nav-height-lg) + 1.5rem);
+
   /* Radius */
   --cn-radius-sm: 0.5rem; /* 8px */
   --cn-radius-md: 0.75rem; /* 12px */
@@ -61,19 +68,19 @@
   --cn-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
   --cn-shadow-md: 0 4px 16px rgb(0 0 0 / 0.25);
   --cn-shadow-lg: 0 12px 40px rgb(0 0 0 / 0.35);
-  --cn-shadow-glow-accent: 0 0 24px rgb(0 240 255 / 0.12);
-  --cn-shadow-glow-accent-strong: 0 0 32px rgb(0 240 255 / 0.22);
+  --cn-shadow-glow-accent: 0 0 24px rgb(255 157 46 / 0.14);
+  --cn-shadow-glow-accent-strong: 0 0 32px rgb(255 157 46 / 0.22);
 
   /* Glass surface */
-  --cn-glass-bg: rgb(17 24 39 / 0.55);
+  --cn-glass-bg: rgb(16 20 29 / 0.55);
   --cn-glass-border: rgb(255 255 255 / 0.06);
   --cn-glass-blur: 12px;
 
   /* Grid & atmosphere */
   --cn-grid-size: 2.5rem; /* 40px */
   --cn-grid-line: rgb(255 255 255 / 0.03);
-  --cn-grid-line-teal: rgb(0 240 255 / 0.04);
-  --cn-glow-radial: rgb(0 200 215 / 0.08);
+  --cn-grid-line-teal: rgb(32 216 242 / 0.05);
+  --cn-glow-radial: rgb(255 157 46 / 0.06);
 
   /* Motion */
   --cn-ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
@@ -86,12 +93,12 @@
   --cn-focus-ring-offset: 2px;
 
   /* Selection */
-  --cn-selection-bg: rgb(0 240 255 / 0.18);
+  --cn-selection-bg: rgb(255 157 46 / 0.22);
   --cn-selection-text: var(--cn-color-text);
 
   /* Scrollbar */
-  --cn-scrollbar-thumb: rgb(148 163 184 / 0.25);
-  --cn-scrollbar-thumb-hover: rgb(148 163 184 / 0.4);
+  --cn-scrollbar-thumb: rgb(168 177 194 / 0.25);
+  --cn-scrollbar-thumb-hover: rgb(168 177 194 / 0.4);
 }
 
 /* Container padding — responsive horizontal inset */

@@ -22,7 +22,7 @@ export function ServiceIndex({ services }: ServiceIndexProps) {
                 <span className="font-mono text-sm tracking-[0.25em] text-brand-muted-secondary">
                   {service.index}
                 </span>
-                <span className="cn-tech-label text-brand-accent">{service.categoryLabel}</span>
+                <span className="cn-tech-label text-brand-accent-secondary">{service.categoryLabel}</span>
               </div>
 
               <div className="lg:col-span-4">

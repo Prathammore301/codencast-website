@@ -26,7 +26,7 @@ export function CTASection(props: CTASectionProps = {}) {
           <div className="relative overflow-hidden rounded-[1.25rem] border border-brand-border bg-brand-surface-elevated px-6 py-14 cn-bg-grid-teal lg:px-14 lg:py-20 xl:px-20 xl:py-24">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(0,240,255,0.06),transparent_45%)]" />
             <div className="relative max-w-3xl">
-              <p className="cn-tech-label text-brand-accent">{eyebrow}</p>
+              <p className="cn-tech-label text-brand-accent-secondary">{eyebrow}</p>
               <h2
                 id="page-cta-heading"
                 className="cn-display-md mt-6 text-brand-text lg:cn-display-lg xl:cn-display-xl"

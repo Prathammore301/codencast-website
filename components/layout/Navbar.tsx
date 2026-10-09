@@ -68,7 +68,7 @@ export function Navbar() {
           </div>
 
           <div className="flex h-full items-center justify-center lg:hidden">
-            <NavLogo priority className="h-10 min-[375px]:h-11" />
+            <NavLogo priority />
           </div>
         </div>
       </header>

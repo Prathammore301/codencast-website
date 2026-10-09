@@ -22,9 +22,9 @@ export function InsightArticleView({ article }: InsightArticleViewProps) {
 
   return (
     <>
-      <article className="cn-container cn-section-y-lg pb-0">
+      <article className="cn-container cn-page-bottom-lg pb-0">
         <Reveal>
-          <header className="mx-auto max-w-[45rem] pt-28 lg:pt-32">
+          <header className="cn-page-top-nav mx-auto max-w-[45rem]">
             <div className="flex flex-wrap gap-x-4 gap-y-2 cn-tech-label text-brand-muted-secondary">
               <span className="text-brand-accent">{article.category}</span>
               <time dateTime={article.publishedAt}>{formatInsightDate(article.publishedAt)}</time>
@@ -68,7 +68,7 @@ export function InsightArticleView({ article }: InsightArticleViewProps) {
 
         {related.length > 0 ? (
           <aside className="mx-auto mt-16 max-w-[45rem] border-t border-brand-border/80 pt-10 lg:mt-20">
-            <p className="cn-tech-label text-brand-accent">Related insights</p>
+            <p className="cn-tech-label text-brand-accent-secondary">Related insights</p>
             <ul className="mt-6 divide-y divide-brand-border/80">
               {related.map((item) => (
                 <li key={item.slug}>

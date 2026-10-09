@@ -128,7 +128,7 @@ export function MobileNav({ menuOpen, onMenuOpenChange }: MobileNavProps) {
                 transition={{ duration: reducedMotion ? 0.01 : 0.26, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="flex items-center justify-between border-b border-brand-border px-5 py-4">
-                  <p className="cn-tech-label text-brand-accent">Navigation</p>
+                  <p className="cn-tech-label text-brand-accent-secondary">Navigation</p>
                   <button
                     type="button"
                     className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-cn-md border border-brand-border bg-brand-bg/60 cn-interactive"
@@ -171,7 +171,7 @@ export function MobileNav({ menuOpen, onMenuOpenChange }: MobileNavProps) {
                             </span>
                             <span
                               aria-hidden
-                              className={`cn-tech-label text-brand-accent transition-transform ${
+                              className={`cn-tech-label text-brand-accent-secondary transition-transform ${
                                 servicesExpanded ? "rotate-180" : ""
                               }`}
                             >

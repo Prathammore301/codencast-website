@@ -18,7 +18,7 @@ export function PipelineDiagram() {
   return (
     <div className="relative overflow-hidden border border-brand-border/80 bg-brand-surface/35 p-6 cn-bg-grid-dark lg:p-10 xl:p-12">
       <div className="flex items-center justify-between gap-4">
-        <p className="cn-tech-label text-brand-accent">Integrated delivery model</p>
+        <p className="cn-tech-label text-brand-accent-secondary">Integrated delivery model</p>
         <p className="cn-tech-label text-brand-muted">Design ↔ Engineering</p>
       </div>
 
@@ -31,7 +31,7 @@ export function PipelineDiagram() {
         >
           <path
             d="M40 60 H960"
-            stroke="rgba(0,240,255,0.25)"
+            stroke="rgba(32,216,242,0.28)"
             strokeWidth="1.5"
             strokeDasharray="6 8"
             fill="none"
@@ -42,8 +42,8 @@ export function PipelineDiagram() {
               cx={x}
               cy={60}
               r="6"
-              fill="#0b0f17"
-              stroke="rgba(0,240,255,0.55)"
+              fill="#080a0f"
+              stroke="rgba(32,216,242,0.55)"
               strokeWidth="2"
             />
           ))}

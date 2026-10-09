@@ -21,6 +21,22 @@
   padding-block: var(--cn-section-y-lg);
 }
 
+/** Inner pages: bottom section rhythm without stacking extra top padding above PageHero */
+@utility cn-page-bottom-lg {
+  padding-block-end: var(--cn-section-y-lg);
+}
+
+/** Nav clearance for heroes and article headers (use instead of pt-28 + section-y-lg) */
+@utility cn-page-top-nav {
+  padding-block-start: var(--cn-page-hero-pad-top);
+}
+
+@media (min-width: 64rem) {
+  .cn-page-top-nav {
+    padding-block-start: var(--cn-page-hero-pad-top-lg);
+  }
+}
+
 @utility cn-section-y-xl {
   padding-block: var(--cn-section-y-xl);
 }

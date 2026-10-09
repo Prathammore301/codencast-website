@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Reveal } from "@/components/motion/Reveal";
 
 export type PageHeroMetaItem = {
+  id?: string;
   label: string;
   value: string;
 };
@@ -33,11 +34,11 @@ export function PageHero({
       ? "cn-display-md sm:cn-display-lg lg:cn-display-lg xl:cn-display-xl text-brand-text"
       : "cn-display-md lg:cn-display-lg text-brand-text";
 
-  const topPad = compactTop ? "pt-0" : "pt-28 lg:pt-32";
+  const topPad = compactTop ? "pt-0" : "cn-page-top-nav";
 
   const heading = (
     <>
-      {eyebrow ? <p className="cn-tech-label text-brand-accent">{eyebrow}</p> : null}
+      {eyebrow ? <p className="cn-tech-label text-brand-accent-secondary">{eyebrow}</p> : null}
       <h1 className={`${titleClass} ${eyebrow ? "mt-5 lg:mt-6" : ""} max-w-[18ch] leading-[1.05]`}>
         {title}
       </h1>
@@ -55,7 +56,7 @@ export function PageHero({
         <p className="cn-tech-label text-brand-muted">At a glance</p>
         <dl className="mt-5 space-y-4">
           {meta.map((item) => (
-            <div key={item.label}>
+            <div key={item.id ?? `${item.label}::${item.value}`}>
               <dt className="cn-caption text-brand-muted-secondary">{item.label}</dt>
               <dd className="mt-1 cn-body-md text-brand-text">{item.value}</dd>
             </div>

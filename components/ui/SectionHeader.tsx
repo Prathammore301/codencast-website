@@ -26,7 +26,7 @@ export function SectionHeader({
   return (
     <header className={`max-w-4xl ${alignClass} ${className}`}>
       {eyebrow ? (
-        <p className="cn-tech-label text-brand-accent">{eyebrow}</p>
+        <p className="cn-tech-label text-brand-accent-secondary">{eyebrow}</p>
       ) : null}
       <h2
         id={titleId}

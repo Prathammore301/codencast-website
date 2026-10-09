@@ -119,7 +119,7 @@ export function ServicesMegaMenu({ isOpen, onOpenChange }: ServicesMegaMenuProps
             <div className="cn-surface-glass overflow-hidden rounded-cn-lg border border-brand-border shadow-cn-lg">
               <div className="grid grid-cols-12 gap-0">
                 <div className="col-span-12 border-b border-brand-border bg-brand-surface-elevated/40 p-6 md:col-span-4 md:border-b-0 md:border-r md:p-8">
-                  <p className="cn-tech-label text-brand-accent/80">Capabilities</p>
+                  <p className="cn-tech-label text-brand-accent-secondary/80">Capabilities</p>
                   <p className="mt-4 cn-heading-sm text-brand-text">
                     End-to-end digital engineering
                   </p>
@@ -143,7 +143,7 @@ export function ServicesMegaMenu({ isOpen, onOpenChange }: ServicesMegaMenuProps
                       </p>
                       <span
                         aria-hidden
-                        className="mt-3 inline-flex cn-tech-label text-brand-accent"
+                        className="mt-3 inline-flex cn-tech-label text-brand-accent-secondary"
                       >
                         Open →
                       </span>
